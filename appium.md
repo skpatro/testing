@@ -1,8 +1,8 @@
 
 # Appium cheatsheet
 
-
-
+  
+  
 ### Appium capabilities
 
 ```java
@@ -28,7 +28,7 @@ cap = new DesiredCapabilities();
   Assert.assertNotNull(driver);
 ```
 
-
+  
 ### WebDriver to AndroidDriver
 
 ```java
@@ -48,7 +48,7 @@ webDriver = appiumDriver;
 ((AndroidDriver<MobileElement>) webDriver).findElementByAndroidUIAutomator(...);
 ```
 
-
+  
 ### Take screenshot
 
 ```java
@@ -70,7 +70,7 @@ public static String captureScreen(String screenShotName){
 }
 ```
 
-
+  
 ### Scroll till text matches
 
 ```java
@@ -80,7 +80,7 @@ public static void scrollTillText(String text) {
     }
 ```
 
-
+  
 ### Scroll up to down
 
 ```java
@@ -99,8 +99,8 @@ public static void scrollDown() {
 	}
   ```
   
-  
-  ### Scroll right to left
+    
+ ### Scroll right to left
   
   ```java
   public static void scrollRightToLeft() {
@@ -119,7 +119,7 @@ public static void scrollDown() {
 	}
   ```
 
-
+  
 ### Verify toast messages
 
 ```java
