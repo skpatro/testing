@@ -1,22 +1,21 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/skpatro/testing/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### WebDriver to AndroidDriver
 
-### Markdown
+```java
+import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.WebDriver;
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+WebDriver webDriver;
+AppiumDriver<MobileElement> appiumDriver;
 
-```markdown
-Syntax highlighted code block
+//...
+appiumDriver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 
-# Header 1
-## Header 2
-### Header 3
+// appiumdriver to webdriver
+webDriver = appiumDriver;
 
-- Bulleted
-- List
+//WebDriver to AndroidDriver
+((AndroidDriver<MobileElement>) webDriver).findElementByAndroidUIAutomator(...);
+```
 
-1. Numbered
-2. List
