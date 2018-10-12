@@ -81,7 +81,7 @@ public static void scrollTillText(String text) {
 ```
 
   
-### Scroll up to down
+### Scroll up to down  
 
 ```java
 public static void scrollDown() {
@@ -129,4 +129,42 @@ MobileElement popUpElement = (MobileElement) driver.findElement(MobileBy.Accessi
 	/*Assert.assertNotNull(wait.until(ExpectedConditions.
   presenceOfElementLocated(By.xpath("//*[@text='Clicked popup menu item Search']"))));*/
 	Assert.assertNotNull(By.xpath("//*[@text='Clicked popup menu item Search']"));
+```
+
+  
+### Open android simulator cmd
+
+```java
+emulator -list-avds
+```
+
+```java
+emulator <deviceName>
+```
+
+  
+### Open iOS simulator cmd
+
+```java
+xcrun simctl boot <UDID>
+```
+
+  
+### Get iOS app bundleID
+
+```java
+osascript -e 'id of app "/path/of/ios/appName.app"'
+```
+   
+   
+### Get simulator device ID cmd
+
+```java
+//for android
+adb devices
+```
+
+```java
+//for iOS
+xcrun simctl list devices | grep '(Booted)'
 ```
