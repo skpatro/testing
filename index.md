@@ -2,9 +2,6 @@
 
 ### Appium cheatsheet
 
-```markdown
 [Appium](https://skpatro.github.io/testing/appium)
 
-
-```
 
