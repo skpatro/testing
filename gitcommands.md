@@ -1,7 +1,7 @@
 ## Command line instructions
 
+## Git global setup
 ```
-Git global setup
 git config --global user.name "YourUserName"
 git config --global user.email "name@email.com"
 
@@ -27,7 +27,7 @@ Remove/update related Credentials stored in Windows Credentials -
 >>Control Panel\All Control Panel Items\Credential Manager
 ```
 
-
+## To clone and pull the code
 ```
 git clone --recurse-submodules <path of remote repo.git>
 git checkout <name of branch>
@@ -36,8 +36,9 @@ To undo any local changes - git checkout [filenamewithpath]
 Git pull 
 ```
 
+## Branch commands
 ```
-List all branches
+//List all branches
 git branch -a 
 
 //to create a branch - 
@@ -45,28 +46,30 @@ got branch <branchName>
 
 //to switch to another branch
 git checkout <AnotherBranchName>
-```
 
-```
-to clone a single branch
+//to clone a single branch
 git clone --single-branch -b <branchName> host:/dir.git
 
 //to know which git repo is associated currently
 git remote -v
+```
 
-Ignore files and folders to push to remote repo
+## Gitignore
+```
+//Ignore files and folders to push to remote repo
 .gitignore
 
 //create a file -
 touch .gitignore
 
-mention files and folders that you do not want to push to remote repo
+//mention files and folders that you do not want to push to remote repo
 
-----.gitignore------
+//----.gitignore------
 log.txt
 /folder
 ```
 
+## 
 ```
 git init
 git add.
