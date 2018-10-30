@@ -36,6 +36,12 @@ To undo any local changes - git checkout [filenamewithpath]
 Git pull 
 ```
 
+## pull specific branch
+```
+git pull origin <branchName>
+```
+
+
 ## Branch commands
 ```
 //List all branches
