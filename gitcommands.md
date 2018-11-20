@@ -115,3 +115,27 @@ git remote add origin servername.git
 git push -u origin --all
 git push -u origin --tags
 ```
+
+### stash delete
+
+```
+//remove stash list
+git stash list
+git stash drop stash@{n} //n is no. shown in list
+git stash drop //with no parameter, it deletes the top stash in the list
+```
+
+### branch delete
+
+```
+//To delete the local branch use one of the following:
+git branch -d branch_name
+git branch -D branch_name
+//Note: The -d option is an alias for --delete, which only deletes the branch if it has already been fully merged in its //upstream branch. 
+//-D, which is an alias for --delete --force, which deletes the branch "irrespective of its merged status." 
+//[Source: man git-branch]
+
+//to delete remote branch
+git push <remote_name> -d <branch_name>
+```
+
