@@ -11,8 +11,9 @@ git config user.email "email@example.com"
 //to get the username
 git config user.email  //will give you the user name associated currently
 
-//to reenter new username and password while doing push or pull
-git config --global --unset user.password
+//to reset user name and email
+git config --global --unset user.name
+git config --global --unset user.email
 
 //or
 
