@@ -1,6 +1,6 @@
 ## Command line instructions
 
-## Git global setup
+### Git global setup
 ```
 git config --global user.name "YourUserName"
 git config --global user.email "name@email.com"
@@ -27,7 +27,7 @@ Remove/update related Credentials stored in Windows Credentials -
 >>Control Panel\All Control Panel Items\Credential Manager
 ```
 
-## To clone and pull the code
+### To clone and pull the code
 ```
 git clone --recurse-submodules <path of remote repo.git>
 git checkout <name of branch>
@@ -36,13 +36,13 @@ To undo any local changes - git checkout [filenamewithpath]
 Git pull 
 ```
 
-## pull specific branch
+### pull specific branch
 ```
 git pull origin <branchName>
 ```
 
 
-## Branch commands
+### Branch commands
 ```
 //List all branches
 git branch -a 
@@ -60,7 +60,7 @@ git clone --single-branch -b <branchName> host:/dir.git
 git remote -v
 ```
 
-## Gitignore
+### Gitignore
 ```
 //Ignore files and folders to push to remote repo
 .gitignore
@@ -75,7 +75,7 @@ log.txt
 /folder
 ```
 
-## 
+### Git Push pull
 ```
 git init
 git add.
@@ -116,7 +116,7 @@ git push -u origin --all
 git push -u origin --tags
 ```
 
-### stash delete
+### Stash delete
 
 ```
 //remove stash list
@@ -125,7 +125,7 @@ git stash drop stash@{n} //n is no. shown in list
 git stash drop //with no parameter, it deletes the top stash in the list
 ```
 
-### branch delete
+### Branch delete
 
 ```
 //To delete the local branch use one of the following:
