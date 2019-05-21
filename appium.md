@@ -132,13 +132,18 @@ MobileElement popUpElement = (MobileElement) driver.findElement(MobileBy.Accessi
 ```
 
   
-### Open android simulator cmd
+### Launch android simulator cmd
 
 ```java
-emulator -list-avds
+//Setup below env setups, note - android sdk should be downloaded through android studio
+export ANDROID_HOME=/Users/MacUserName/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ```
 
 ```java
+//get the avd names
+emulator -list-avds
+//launch the simulator with avd name
 emulator <deviceName>
 ```
 
@@ -153,6 +158,9 @@ xcrun simctl boot <UDID>
 ### Get iOS app bundleID
 
 ```java
+//If you build the ios app source code in xcode, you can get the .app file under   
+// /Users/[MacUserName]/Library/Developer/Xcode/DerivedData/[AppName_xxxxxx]/Build/Products/Debug-iphonesimulator/[appName].app
+
 osascript -e 'id of app "/path/of/ios/appName.app"'
 ```
    
@@ -162,19 +170,17 @@ osascript -e 'id of app "/path/of/ios/appName.app"'
 ```java
 //for android
 adb devices
-```
 
-```java
 //for iOS
 xcrun simctl list devices | grep '(Booted)'
 ```
 
-###Android_iOS sample app links
+### Android_iOS sample app links
 
 //Android   
 https://github.com/appium/java-client/blob/master/src/test/java/io/appium/java_client/ApiDemos-debug.apk
 
 //ios   
-https://github.com/SamadiPour/SimpleCalculator
-https://github.com/appium/ios-test-app
-https://github.com/appium/ios-uicatalog
+https://github.com/SamadiPour/SimpleCalculator   
+https://github.com/appium/ios-test-app   
+https://github.com/appium/ios-uicatalog   
