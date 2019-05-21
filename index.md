@@ -1,8 +1,8 @@
 ## Welcome to testing Pages
 
-### Appium cheatsheet
+### Cheatsheets
 
-[Appium](https://skpatro.github.io/testing/appium)
+[Appium Cheatsheet](https://skpatro.github.io/testing/appium_cheatsheet)
   
 [Android_iOS_SimulatorCommands](https://skpatro.github.io/testing/Android_iOS_SimulatorCommands)
 
