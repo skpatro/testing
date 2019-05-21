@@ -4,7 +4,7 @@
 
 [Appium](https://skpatro.github.io/testing/appium)
   
-[ADBCommands](https://skpatro.github.io/testing/adbcommands)
+[Android_iOS_SimulatorCommands](https://skpatro.github.io/testing/Android_iOS_SimulatorCommands)
 
 [GitCommands](https://skpatro.github.io/testing/gitcommands)
 
