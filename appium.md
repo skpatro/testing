@@ -168,3 +168,13 @@ adb devices
 //for iOS
 xcrun simctl list devices | grep '(Booted)'
 ```
+
+###Android_iOS sample app links
+
+//Android   
+https://github.com/appium/java-client/blob/master/src/test/java/io/appium/java_client/ApiDemos-debug.apk
+
+//ios   
+https://github.com/SamadiPour/SimpleCalculator
+https://github.com/appium/ios-test-app
+https://github.com/appium/ios-uicatalog
