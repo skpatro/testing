@@ -131,48 +131,15 @@ MobileElement popUpElement = (MobileElement) driver.findElement(MobileBy.Accessi
 	Assert.assertNotNull(By.xpath("//*[@text='Clicked popup menu item Search']"));
 ```
 
-  
-### Launch android simulator cmd
+
+### Install appium CLI with admin aceess
 
 ```java
-//Setup below env setups, note - android sdk should be downloaded through android studio
-export ANDROID_HOME=/Users/MacUserName/Library/Android/sdk
-export PATH=${PATH}:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-```
-
-```java
-//get the avd names
-emulator -list-avds
-//launch the simulator with avd name
-emulator <deviceName>
-```
-
-  
-### Open iOS simulator cmd
-
-```java
-xcrun simctl boot <UDID>
-```
-
-  
-### Get iOS app bundleID
-
-```java
-//If you build the ios app source code in xcode, you can get the .app file under   
-// /Users/[MacUserName]/Library/Developer/Xcode/DerivedData/[AppName_xxxxxx]/Build/Products/Debug-iphonesimulator/[appName].app
-
-osascript -e 'id of app "/path/of/ios/appName.app"'
-```
-   
-   
-### Get simulator device ID cmd
-
-```java
-//for android
-adb devices
-
-//for iOS
-xcrun simctl list devices | grep '(Booted)'
+sudo chown -R $(whoami) ~/.npm
+sudo chown -R $(whoami) /usr/local/lib
+sudo chown -R $(whoami) /usr/local/bin
+npm install -g npm@latest
+npm install -g appium
 ```
 
 ### Android_iOS sample app links
